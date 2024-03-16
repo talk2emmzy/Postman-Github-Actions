@@ -18,4 +18,4 @@ jobs:
         run: |
           postman collection run "13552206-be714582-a142-4cd3-a81e-8d2c43ed40f3" -e "13552206-6b9b07d1-1792-4fc4-8492-67d587f0a5f8"
       - name: logout
-        run: postman logout --with-api-key ${{ secrets.POSTMAN_API_KEY }}
+        run: postman logout ${{ secrets.POSTMAN_API_KEY }}
